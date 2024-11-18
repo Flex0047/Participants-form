@@ -1,0 +1,94 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-form {
+    width: 90%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+/* Start Label */
+.personal_info {
+    width: 90%;
+    margin: auto;
+    /* background-color: rgb(190, 190, 190); */
+    font-weight: bold;
+}
+
+.personal_info input {
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px#666666;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.personal_contanct {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+
+.personal_contanct div {
+    width: calc(50% - 35px);
+}
+
+.personal_info select {
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px#666666;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, 0.39);
+    font-weight: bold;
+}
+
+/* .personal_info select option {
+    display: block;
+    padding: 115px;
+    color: black;
+} */
+
+.Participate-Container .container .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[for="reason"] {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+[for="Comments"] {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+[type="submit"] {
+    width: 220px;
+    height: 60px;
+    margin: 70px;
+    background-color: #7C122F;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 15px;
+}

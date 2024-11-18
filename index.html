@@ -7,9 +7,10 @@
   <link rel="shortcut icon" href="/images/STP LOGO.png" type="image/x-icon">
   <title>Form</title>
 
-  <link rel="stylesheet" href="general.css">
-  <link rel="stylesheet" href="form.css">
-  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -24,101 +25,90 @@
 
   <form action="" method="post">
 
-    <label for="name">Full Name*</label>
-    <input id="name" type="text" required placeholder="Full Name" name="name">
+    <div class="container-form">
+      <div class="personal_info">
+        <label for="name">Full Name <span>*</span></label>
+        <input id="name" type="text" required placeholder="Full Name" name="name">
 
-    <label for="email">E-mail*</label>
-    <input id="email" type="email" required placeholder="example@gmail.com" name="email">
+        <label for="email">E-mail<span>*</span></label>
+        <input id="email" type="email" required placeholder="example@gmail.com" name="email">
 
+        <div class="personal_contanct">
+          <div>
+            <label for="WhatsApp Number">WhatsApp Number<span>*</span></label>
+            <input id="WhatsApp Number" type="tel" pattern="^01[0-2,5]{1}[0-9]{8}$" required placeholder="01xxxxxxxxx"
+              name="WhatsApp Number">
+          </div>
+          <div>
+            <label for="National ID">National ID<span>*</span></label>
+            <input id="National ID" type="text"
+              pattern="^([2-3]{1})([0-9]{2})(0[1-9]|1[012])(0[1-9]|[1-2][0-9]|3[0-1])(0[1-4]|[1-2][1-9]|3[1-5]|88)[0-9]{3}([0-9]{1})[0-9]{1}$"
+              required placeholder="30**********" name="National ID">
+          </div>
 
-    <div class="personal_info">
+          <div>
+            <label for="College">College<span>*</span></label>
+            <input id="College" type="text" required placeholder="College" name="College">
+          </div>
+          <div>
+            <label for="Major">Major<span>*</span></label>
+            <input id="Major" type="text" required placeholder="Major" name="Major">
+          </div>
+        </div>
 
-      <label for="WhatsApp Number">WhatsApp Number*</label>
-      <input id="WhatsApp Number" type="tel" pattern="^01[0-2,5]{1}[0-9]{8}$" required placeholder="01xxxxxxxxx"
-        name="WhatsApp Number">
+        <label for="Graduation year">Graduation year<span>*</span></label>
+        <select id="Graduation year" name="Graduation year">
+          <option value="" aria-checked="true">Select option</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+        </select>
 
+        <div class="Participate-Container">
+          <div class="Participate">
+            <h2>Want to Participate in:</h2>
+          </div>
 
-      <label for="National ID">National ID*</label>
-      <input id="National ID" type="text"
-        pattern="^([2-3]{1})([0-9]{2})(0[1-9]|1[012])(0[1-9]|[1-2][0-9]|3[0-1])(0[1-4]|[1-2][1-9]|3[1-5]|88)[0-9]{3}([0-9]{1})[0-9]{1}$"
-        required placeholder="30**********" name="National ID">
+          <div class="buttons">
 
-
-      <label for="College">College*</label>
-      <input id="College" type="text" required placeholder="College" name="College">
-
-
-      <label for="Major">Major*</label>
-      <input id="Major" type="text" required placeholder="Major" name="Major">
-    </div>
-
-
-    <label for="Graduation year">Graduation year*</label>
-    <select id="Graduation year" name="Graduation year">
-      <option value="">Select option</option>
-      <option value="2025">2025</option>
-      <option value="2026">2026</option>
-      <option value="2027">2027</option>
-      <option value="2028">2028</option>
-      <option value="2029">2029</option>
-    </select>
-
-    <div class="Participate-Container">
-      <div class="Participate">
-        <h2>Want to Participate in:</h2>
-      </div>
-      <div class="container">
-        <div class="buttons">
-          <button class="competitions" onclick="showSection('competitions')">
-            <div class="image">
-              <img src="images/Competition.svg" alt="Competitions">
-              <span>Competitions</span>
+            <div class="btn">
+              <button class="competitions" onclick="showSection('competitions')">
+                <div class="image">
+                  <img src="images/Competition.svg" alt="Competitions">
+                  <p>Competitions</p>
+                </div>
+              </button>
             </div>
-          </button>
-          <button class="workshops" onclick="showSection('workshops')">
-            <div class="image">
-              <img src="images/Workshop.svg" alt="Workshop">
 
-
-              <span>WorkShops</span>
+            <div class="btn">
+              <button class="workshops" onclick="showSection('workshops')">
+                <div class="image">
+                  <img src="images/Workshop.svg" alt="Workshop">
+                  <p>WorkShops</p>
+              </button>
             </div>
-          </button>
+          </div>
+        </div>
+
+        <div class="sections">
+
+          <label for="reason">
+            Why do you want to Participate in this Workshop/
+            Competition ?
+          </label>
+          <textarea id="reason-box"></textarea>
+          <div class="comments">
+            <label for="Comments">Any Comment or Question</label>
+            <textarea id="Comment"></textarea>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="sections">
-      <form id="competitions-form" class="form-section">
-        <label for="competition-options">Competitions:</label>
-        <select id="competition-options">
-          <option value="Digitization">Prescription Digitization</option>
-          <option value="RoboQuest">RoboQuest</option>
-        </select>
-        <label for="competition-reason">Why do you want to Participate in this competitiion</label>
-        <textarea id="competition-reason"></textarea>
-      </form>
-      <form id="workshops-form" class="form-section">
-        <label for="workshop-options">Workshops:</label>
-        <select id="workshop-options">
-          <option value="Paython">Paython</option>
-          <option value="Machine Learning">Machine Learning</option>
-          <option value="Ansys">Ansys</option>
-          <option value="Solid Works">SolidWorks</option>
-          <option value="Graphic Designer">Graphic Designer</option>
-          <option value="Montag">Montag</option>
-        </select>
-        <label for="workshop-reason">Why do you want to Participate in this workshop</label>
-        <textarea id="workshop-reason"></textarea>
-        <div class="comments">
-          <label for="Comments">Any Comment or Question</label>
-          <textarea id="Comment"></textarea>
-      </form>
-    </div>
-    </div>
 
-
-    <div class="submit">
-      <input type="submit" value="Submit">
-    </div>
+      <div class="submit">
+        <input type="submit" value="Submit">
+      </div>
   </form>
 </body>
 
