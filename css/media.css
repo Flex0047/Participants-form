@@ -1,8 +1,10 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 360px) {
 
   body {
-    height: 145vh;
+    height: 195vh;
   }
 
   header .logo img {
@@ -14,60 +16,70 @@
   }
 
   header .bar-logo {
-    height: 80px;
+    height: 55px;
   }
+
 
   header .bar-logo img {
     border: 5px #3c334e solid;
-    border-radius: 10px;
   }
 
   .personal_info {
-    width: 80%;
-    margin: 20px auto;
-    font-size: 16px;
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .personal_info label {
+    white-space: nowrap;
   }
 
   .personal_info input,
   .personal_info select {
     padding: 5px;
+    font-size: 10px;
   }
 
+
   .personal_contanct div {
-    width: calc(50% - 20px);
+    width: calc(50% - 15px);
+  }
+
+  .personal_contanct label {
+    white-space: nowrap;
   }
 
   .Participate h2 {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .buttons img {
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 10px;
   }
 
   .buttons p {
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 10px;
+    margin-top: 5px;
   }
 
   [for="reason"],
   [for="Comments"] {
-    font-size: 14px;
+    font-size: 10px;
+    white-space: wrap !important;
   }
 
   textarea {
-    padding: 10px;
-    font-size: 12px;
+    padding: 5px;
+    font-size: 10px;
   }
 
   [type="submit"] {
-    width: 120px;
-    height: 45px;
-    margin: 40px;
-    border-radius: 10px;
-    font-size: 14px;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 0;
   }
 }
 
