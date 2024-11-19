@@ -1,40 +1,80 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  header img {
-    width: 100%;
-  }
-}
+@media only screen and (min-width: 1200px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  header img {
-    width: 100%;
-  }
-}
+@media only screen and (min-width: 992px) {}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  header img {
-    width: 100%;
-  }
-}
+@media only screen and (min-width: 768px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  header img {
-    width: 100%;
-  }
-}
+@media only screen and (min-width: 600px) {}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  header img {
-    width: 100%;
+  header .logo img {
+    width: 50px;
   }
-}
 
-@media (min-width: 375px) {
-  header img {
-    width: 100%;
+  header .logo img:nth-child(2) {
+    width: 75px;
+  }
+
+  header .bar-logo {
+    height: 80px;
+  }
+
+  header .bar-logo img {
+    border: 5px #3c334e solid;
+    border-radius: 10px;
+  }
+
+  .personal_info {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+
+  .personal_info input,
+  .personal_info select {
+    padding: 5px;
+  }
+
+  .personal_contanct div {
+    width: calc(50% - 20px);
+  }
+
+  .Participate h2 {
+    font-size: 18px;
+  }
+
+  .buttons img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+
+  .buttons p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  [for="reason"],
+  [for="Comments"] {
+    font-size: 14px;
+  }
+
+  textarea {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  [type="submit"] {
+    width: 120px;
+    height: 45px;
+    margin: 40px;
+    border-radius: 10px;
+    font-size: 14px;
   }
 }

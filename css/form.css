@@ -1,9 +1,37 @@
-header {
+form {
+    width: 80%;
+    height: auto;
+    background-color: #F5F4EF;
+    margin: auto;
+    border: 5px solid #dbd8c9;
+}
+
+header .logo {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
+header .logo img {
+    width: 100px;
+    margin: 10px;
+}
+
+header .logo img:nth-child(2) {
+    width: 150px;
+    margin: 10px;
+}
+
+header .bar-logo {
+    text-align: center;
+    height: 250px;
+}
+
+header .bar-logo img {
+    width: 95%;
+    border: 10px #3c334e solid;
+    border-radius: 20px;
+}
 
 .container-form {
     width: 90%;
@@ -22,6 +50,7 @@ header {
     margin: auto;
     /* background-color: rgb(190, 190, 190); */
     font-weight: bold;
+    font-size: 24px;
 }
 
 .personal_info input {
@@ -56,17 +85,46 @@ header {
     font-weight: bold;
 }
 
-/* .personal_info select option {
-    display: block;
-    padding: 115px;
+.personal_info select option {
     color: black;
-} */
+}
+
+.buttons .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.buttons img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.buttons p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #7C122F;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.competitions img {
+    filter: drop-shadow(0 2px 2px black);
+}
+
+.workshops img {
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.555));
+}
+
 
 .Participate-Container .container .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 [for="reason"] {
     font-size: 32px;
