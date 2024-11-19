@@ -2,9 +2,9 @@
 
 @media (max-width: 1440px) {
 
-  /* body {
-    height: 170vh;
-  } */
+  body {
+    height: 285vh;
+  }
 
   header .logo img {
     width: 200px;
@@ -15,7 +15,7 @@
   }
 
   header .bar-logo {
-    height: 12.2rem;
+    height: 11.3rem;
   }
 
   .personal_info {
@@ -67,9 +67,9 @@
 /* Laptop / Large Screen- 1024px */
 
 @media (max-width: 1200px) {
-  /* body {
-    height: 170vh;
-  } */
+  body {
+    height: 250vh;
+  }
 
   header .logo img {
     width: 125px;
@@ -132,9 +132,9 @@
 
 @media (max-width: 768px) {
 
-  /* body {
-    height: 145vh;
-  } */
+  body {
+    height: 185vh;
+  }
 
   header .logo img {
     width: 70px;
@@ -156,6 +156,7 @@
   .personal_info input,
   .personal_info select {
     padding: 0.5rem;
+    font-size: 1rem;
   }
 
   .Participate h2 {
@@ -190,94 +191,12 @@
 }
 
 
-/* @media (max-width: 576px) {
-  body {
-    height: 150vh;
-  }
-
-  header .logo img {
-    width: 50px;
-  }
-
-  header .logo img:nth-child(2) {
-    width: 8rem;
-  }
-
-  header .bar-logo {
-    height: 3.5rem;
-  }
-
-
-  header .bar-logo img {
-    border: 5px #3c334e solid;
-  }
-
-  .personal_info {
-    width: 90%;
-    font-size: 1rem;
-  }
-
-  .personal_info label {
-    white-space: nowrap;
-  }
-
-  .personal_info input,
-  .personal_info select {
-    padding: 0.25rem;
-    font-size: 0.75rem;
-  }
-
-
-  .personal_contanct div {
-    width: calc(50% - 1rem);
-  }
-
-  .personal_contanct label {
-    white-space: nowrap;
-  }
-
-  .Participate h2 {
-    font-size: 1rem;
-  }
-
-  .buttons img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-  }
-
-  .buttons p {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-  }
-
-  [for="reason"],
-  [for="Comments"] {
-    font-size: 1rem;
-    white-space: wrap !important;
-  }
-
-  textarea {
-    padding: 0.5rem;
-    font-size: 10px;
-  }
-
-  [type="submit"] {
-    width: 70px;
-    height: 30px;
-    border-radius: 5px;
-    font-size: 10px;
-    padding: 0;
-  }
-} */
-
-
 /* Mobile L-425px */
 
 @media (max-width:425px) {
-  /* body {
-    height: 2200vh;
-  } */
+  body {
+    height: 155vh;
+  }
 
   header .bar-logo {
     height: 3.8rem;
@@ -318,9 +237,9 @@
 /* Mobile S-320px */
 @media (max-width: 400px) {
 
-  /* body {
-    height: 210vh;
-  } */
+  body {
+    height: 135vh;
+  }
 
   header .logo img {
     width: 50px;
